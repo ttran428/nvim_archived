@@ -9,33 +9,38 @@ Ted commands.
 - jump forward: `<c-i>`
 - insert line below; i-mode: `o`
 - insert line above; i-mode: `O`
-- insert after character: `a`
 
 Basic Vim Movements https://www.youtube.com/watch?v=H3o4l4GVLW0
 - left/down/up/right: `hjkl`
 - word forward: `w`
 - word back: `b`
+- last letter of current word: `e`
 - yank: `y`
 	- yank line: `yy`
 	- yank word: `yw`
+	- yank word backward: `yb`
 - paste one line below: `p`
 - undo: `u`
 - delete: `d`
 	- delete line: `dd`
 	- delete word: `dw`
+	- delete word backward: `db`
 	- delete current line and one line down: `dj`
-- : `v`
-- : `V`
-- save file: `:w`
-- : `<esc>`
 
+Change Modes
 - visual line mode: `shift-v`
 	- can use arrow keys to highlight lines
 - visual mode: `v`
 	- same as visual line, but with individual text
-- insert mode: `i`
+- insert mode: before letter `i`
 	- lets you edit text
+- insert mode: before letter `a`
 - normal mode: `<c-c>`
+- exit insert mode: `<esc>`
+
+Normal Mode
+- save file: `:w`
+- exit file: `:q`
 
 ### Telescope
 Fuzzy finder to look for files and grep.

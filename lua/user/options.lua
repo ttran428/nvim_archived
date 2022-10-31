@@ -39,7 +39,6 @@ local options = {
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   hidden = true,
   errorbells = false,
-  undodir = "~/.vim/undodir",
 }
 
 vim.opt.shortmess:append "c" -- removes nonsense text. see more https://stackoverflow.com/questions/19580157/to-hide-user-defined-completion-message-at-vim
