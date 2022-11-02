@@ -9,6 +9,8 @@ Ted commands.
 - jump forward: `<c-i>`
 - insert line below; i-mode: `o`
 - insert line above; i-mode: `O`
+- page down: <c-f>
+- page up: <c-b>
 
 Basic Vim Movements https://www.youtube.com/watch?v=H3o4l4GVLW0
 - left/down/up/right: `hjkl`

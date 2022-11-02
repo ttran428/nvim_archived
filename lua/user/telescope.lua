@@ -6,6 +6,7 @@ end
 
 
 telescope.load_extension('media_files')
+telescope.load_extension('noice')
 
 local actions = require "telescope.actions"
 
