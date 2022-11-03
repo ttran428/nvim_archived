@@ -9,18 +9,30 @@ Ted commands.
 - jump forward: `<c-i>`
 - insert line below; i-mode: `o`
 - insert line above; i-mode: `O`
+- insert line below; n-mode: `<leader>o`
+- insert line above, n-mode: `<leader>O`
 - page down: <c-f>
 - page up: <c-b>
+- page half down: `<c-d>`
+- page half up: `<c-u>`
+- indent a block: highlight in visual mode (shift+v), then `>`
+- split screen vertically: `<c-w>v`
+- split screen horizontally `<c-w>S`
 
 Basic Vim Movements https://www.youtube.com/watch?v=H3o4l4GVLW0
 - left/down/up/right: `hjkl`
 - word forward: `w`
 - word back: `b`
 - last letter of current word: `e`
+- end of line: `$`
+- beginning of line: `^`
 - yank: `y`
 	- yank line: `yy`
 	- yank word: `yw`
 	- yank word backward: `yb`
+    - yank the current word: `yiw`
+    - yank the current WORD: `yiW`
+        - WORDs are only separated by whitespace, whereas words can be separated by punctuation
 - paste one line below: `p`
 - undo: `u`
 - delete: `d`
@@ -74,17 +86,15 @@ how to put in brackets.
 
 ## Resources
 - config heavily inspired by https://github.com/LunarVim/Neovim-from-scratch/tree/master
-- to actually learn vim https://www.youtube.com/watch?v=H3o4l4GVLW0
+- to actually learn vim https://www.youtube.com/watch?v=H3o4l4GVLW0 (series is now unlisted)
 - see [awesome neovim](https://github.com/rockerBOO/awesome-neovim) for good neovim plugins
 - see [vim awesome](https://vimawesome.com/) for good vim plugins. Most have a version written in lua for neovim though.
-
+- see  [how to do 90% of what plugihns do with just vim](https://www.youtube.com/watch?v=XA2WjJbmmoM) for vim basics as well
 
 ## Todo
 - add icons
   - lsp setup icons: 1732, 2117 https://www.youtube.com/watch?v=6F3ONwrCxMg&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ&index=8
 - fix lsp
-- set up better scrolling? https://github.com/karb94/neoscroll.nvim
-- try out noice? https://github.com/folke/noice.nvim
 - nvim spectre? search and replace https://github.com/nvim-pack/nvim-spectre
 - bufferline? https://github.com/akinsho/bufferline.nvim or https://github.com/romgrk/barbar.nvim
 - comment? https://github.com/numToStr/Comment.nvim

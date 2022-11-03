@@ -50,4 +50,4 @@ end
 vim.cmd "set whichwrap+=<,>,[,],h,l" -- wraps to the next line. might break plugs? https://stackoverflow.com/questions/2574027/automatically-go-to-next-line-in-vim
 vim.cmd [[set iskeyword+=-]]
 
-
+vim.cmd ":au FocusLost * :wa"

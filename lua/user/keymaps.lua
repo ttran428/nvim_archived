@@ -81,3 +81,9 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", ";", ":", opts) -- no need to hit shift in normal mode. ;wq instead of :wq
 
 keymap("n", "cs", ":colorscheme", opts) -- shortcut to change colorscheme
+
+-- insert line above or below staying in insert mode
+keymap("n", "<leader>o", "o<Esc>", opts) 
+keymap("n", "<leader>O", "O<Esc>", opts) 
+
+
