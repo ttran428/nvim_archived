@@ -1,6 +1,11 @@
 # nvim
 I'm learning vim.
 
+# Installation
+- run `git clone https://github.com/ttran428/nvim.git ~/.config/nvim`
+- open up nvim to download all of the plugins
+- run `:TSUpdate` in nvim to get rid of treesitter issues
+- figure out how to install dev icons
 ## Commands
 
 ### Pure vim commands
