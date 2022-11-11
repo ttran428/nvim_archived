@@ -83,9 +83,9 @@ return packer.startup(function(use)
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/mason.nvim" -- simple to use language server installer
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
+  use "neovim/nvim-lspconfig" -- enable LSP
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
@@ -122,7 +122,8 @@ return packer.startup(function(use)
   })
 
   use 'lewis6991/impatient.nvim'
-
+    
+  use 'numToStr/Comment.nvim'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

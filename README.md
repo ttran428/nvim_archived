@@ -23,6 +23,7 @@ Ted commands.
 - indent a block: highlight in visual mode (shift+v), then `>`
 - split screen vertically: `<c-w>v`
 - split screen horizontally `<c-w>S`
+- copy to clipboard with `*`
 
 Basic Vim Movements https://www.youtube.com/watch?v=H3o4l4GVLW0
 - left/down/up/right: `hjkl`
@@ -45,7 +46,8 @@ Basic Vim Movements https://www.youtube.com/watch?v=H3o4l4GVLW0
 	- delete word: `dw`
 	- delete word backward: `db`
 	- delete current line and one line down: `dj`
-
+    - delete from character to end of line a: `d$`
+- replace in file all instances of `foo` with `bar`: `:%s/foo/bar/g` or `:%s/foo/bar/cg` to confirm every change
 Change Modes
 - visual line mode: `shift-v`
 	- can use arrow keys to highlight lines
@@ -84,6 +86,8 @@ Fuzzy finder to look for files and grep.
 ### vim-surround (TODO)
 how to put in brackets.
 
+### comment 
+- add comments: `[count]gcc`
 ### LSP
 - goto definition: TODO
 
@@ -94,18 +98,17 @@ how to put in brackets.
 - to actually learn vim https://www.youtube.com/watch?v=H3o4l4GVLW0 (series is now unlisted)
 - see [awesome neovim](https://github.com/rockerBOO/awesome-neovim) for good neovim plugins
 - see [vim awesome](https://vimawesome.com/) for good vim plugins. Most have a version written in lua for neovim though.
-- see  [how to do 90% of what plugihns do with just vim](https://www.youtube.com/watch?v=XA2WjJbmmoM) for vim basics as well
+- see  [how to do 90% of what plugins do with just vim](https://www.youtube.com/watch?v=XA2WjJbmmoM) for vim basics as well
 
 ## Todo
-- add icons
-  - lsp setup icons: 1732, 2117 https://www.youtube.com/watch?v=6F3ONwrCxMg&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ&index=8
-- fix lsp
 - nvim spectre? search and replace https://github.com/nvim-pack/nvim-spectre
 - bufferline? https://github.com/akinsho/bufferline.nvim or https://github.com/romgrk/barbar.nvim
-- comment? https://github.com/numToStr/Comment.nvim
+- configure lsp to not show errors on imports
+- configure lsp to have good defaults for lsp keymaps https://github.com/neovim/nvim-lspconfig#suggested-configuration
 
 ## Things you need to install
 - `brew install ripgrep`
+- install nodejs (needed for some lsp servers like pyright) https://nodejs.org/en/download/
 
 
 

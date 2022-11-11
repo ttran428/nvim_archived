@@ -3,7 +3,8 @@ return {
 
     python = {
       analysis = {
-        -- typeCheckingMode = "on"
+        typeCheckingMode = "on",
+        reportMissingImports = false
       }
     }
 	},
