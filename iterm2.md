@@ -5,7 +5,7 @@ These pair well with using neovim.
 - split panes horizontally: cmd-shift-d 
 - move between split panes: cmd-[/]
 - delete window: cmd-w 
-- hotkey window: hyper-n (can remap)
+- hotkey window: hyper-f (can configure) 
 - instant replay mode: cmd-opt-B 
 
 
