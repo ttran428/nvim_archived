@@ -14,6 +14,40 @@ Foundation for Speed https://www.youtube.com/watch?v=gSHf_b6AWKc
 
 ## Commands
 
+## New Commands to Integrate into Workflow
+
+
+- `%`: jump to matching parentheses 
+- go up one paragraph to beginning of paragraph: `{`
+- go down one paragraph to bottom of paragraph: `}`
+- center your view (cursor in middle): `zz`
+- search forward: `/` 
+- search backwards: `?`
+
+
+"("ted")"
+
+- beginning of first character in line: `_` or `^`
+- beginning of line: `0`
+- beginning of file: gg
+- end of file: `G`
+    - yank to the next <char>: `yf<char>`
+    - delete to the next <char>: `df<char>`
+    - yank whole file: `ggyG`
+- replace in file all instances of `foo` with `bar`: `:%s/foo/bar/g` or `:%s/foo/bar/cg` to confirm every change
+- `r<char>`: replace current character with <char>
+- page up: <c-b>
+- page half down: `<c-d>`
+- jump to
+    - jump to next occurence of word you are on: `*`
+    - jump to previous occurence of word you are on: `#`
+    - jump to next <char>: `f<char>`
+    - jump to but not on next <char>: `t<char>`
+        - go back with `,`, forward with `;` (note that `;` is disabled on my version of nvim)
+    - jump to previous <char>: `F<char>`
+    - jump to but not on previous <char>: `T<char>`
+
+
 ### Change Mode
 - visual line mode: `shift-v`
 	- can use arrow keys to highlight lines
@@ -37,6 +71,7 @@ Foundation for Speed https://www.youtube.com/watch?v=gSHf_b6AWKc
 - insert line below; n-mode: `<leader>o`
 - insert line above, n-mode: `<leader>O`
 
+
 ### Motions
 - left/down/up/right: `hjkl`
 - word forward: `w`
@@ -45,6 +80,8 @@ Foundation for Speed https://www.youtube.com/watch?v=gSHf_b6AWKc
 - end of line: `$`
 - beginning of first character in line: `_` or `^`
 - beginning of line: `0`
+- beginning of file: gg
+- end of file: `G`
 
 ### Objects
 - `W`: WORDs are only separated by whitespace 
@@ -60,6 +97,7 @@ Foundation for Speed https://www.youtube.com/watch?v=gSHf_b6AWKc
     - yank the current WORD: `yiW`
     - yank to the next <char>: `yf<char>`
         - WORDs are only separated by whitespace, whereas words can be separated by punctuation
+    - yank whole file: `ggyG`
 - paste one line below: `p`
 - paste one line above: `P`
 - undo: `u`
@@ -84,6 +122,13 @@ Foundation for Speed https://www.youtube.com/watch?v=gSHf_b6AWKc
     - jump forward: `<c-i>`
 
 
+### Folding
+This allows you to fold text. Currently trying `set fdm=indent`.
+- `zo`: open up one fold one layer
+- `zO` open up all fold layers recursively. Capitalizing the below args do the command recursively.
+- `zc`: close one fold layer 
+- `za`: open one fold layer
+-  `zr`: open all folds
 ### Miscellaneous 
 - page down: <c-f>
 - page up: <c-b>
@@ -118,13 +163,18 @@ Fuzzy finder to look for files and grep.
 ### leap
 - goto search: `s<char><char>`
 
-### vim-surround (TODO)
-how to put in brackets.
+### nvim-surround 
+how to put in brackets and quotes and things like that.
+- add: `ys{motion}{char}`
+- delete: `ds{char}`
+- change: `cs{target}{replacement}`
+
+'ted'
 
 ### comment 
 - add comments: `[count]gcc`
 ### LSP
-- goto definition: TODO
+- goto definition: `gd` 
 
 
 

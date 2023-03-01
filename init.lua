@@ -24,4 +24,5 @@ require "user.leap"
 require "user.neoscroll"
 require "user.noice"
 require "user.comment"
+require "user.surround"
 

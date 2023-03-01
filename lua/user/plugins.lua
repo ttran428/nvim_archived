@@ -87,6 +87,8 @@ return packer.startup(function(use)
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
   use "neovim/nvim-lspconfig" -- enable LSP
 
+  use "jose-elias-alvarez/null-ls.nvim"
+
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim'
@@ -115,15 +117,14 @@ return packer.startup(function(use)
       -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
       "MunifTanjim/nui.nvim",
       -- OPTIONAL:
-      --   `nvim-notify` is only needed, if you want to use the notification view.
-      --   If not available, we use `mini` as the fallback
-      "rcarriga/nvim-notify",
       }
   })
 
   use 'lewis6991/impatient.nvim'
     
   use 'numToStr/Comment.nvim'
+
+  use 'kylechui/nvim-surround'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
