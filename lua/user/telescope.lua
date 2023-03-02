@@ -7,8 +7,6 @@ end
 
 telescope.load_extension('media_files')
 telescope.load_extension('noice')
--- telescope.load_extension('projects')
--- telescope.extensions.projects.projects{}
 
 local actions = require "telescope.actions"
 

@@ -25,8 +25,6 @@ Foundation for Speed https://www.youtube.com/watch?v=gSHf_b6AWKc
 - search backwards: `?`
 
 
-"("ted")"
-
 - beginning of first character in line: `_` or `^`
 - beginning of line: `0`
 - beginning of file: gg
