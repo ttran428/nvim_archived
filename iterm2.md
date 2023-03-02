@@ -8,4 +8,5 @@ These pair well with using neovim.
 - hotkey window: hyper-f (can configure) 
 - instant replay mode: cmd-opt-B 
 
-
+Packages
+- `brew install zsh-syntax-highlighting`

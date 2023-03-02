@@ -25,7 +25,6 @@ local options = {
   shiftwidth = 4,                          -- the number of spaces inserted for each indentation
   tabstop = 4,                             -- insert 4 spaces for a tab
   softtabstop=4,
-  expandtab = true,
   cursorline = true,                       -- highlight the current line
   nu = true,  -- show current line number
   relativenumber = true,                  -- set relative numbered lines
@@ -39,6 +38,9 @@ local options = {
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   hidden = true,
   errorbells = false,
+  foldmethod = "expr",
+  foldexpr = "nvim_treesitter#foldexpr()",
+  foldlevel = 20,
 }
 
 vim.opt.shortmess:append "c" -- removes nonsense text. see more https://stackoverflow.com/questions/19580157/to-hide-user-defined-completion-message-at-vim

@@ -5,7 +5,7 @@ if not status_ok then
 
 end
 treesitter.setup {
-  ensure_installed = "all",
+  ensure_installed = {"python", "bash", "dockerfile", "java", "json", "lua", "terraform", "yaml"}, -- it is better to install the ones you need, because otherwise starting up neovim takes longer.
   sync_install = false,
   ignore_install = { "" }, -- List of parsers to ignore installing
   autopairs = {
