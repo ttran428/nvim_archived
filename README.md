@@ -17,13 +17,14 @@ Foundation for Speed https://www.youtube.com/watch?v=gSHf_b6AWKc
 ## New Commands to Integrate into Workflow
 
 
+- delete word backwards: `ctrl-w`
+- delete whole line backwards: `ctrl-u`
 - `%`: jump to matching parentheses 
 - go up one paragraph to beginning of paragraph: `{`
 - go down one paragraph to bottom of paragraph: `}`
 - center your view (cursor in middle): `zz`
 - search forward: `/` 
 - search backwards: `?`
-
 
 - beginning of first character in line: `_` or `^`
 - beginning of line: `0`
@@ -167,7 +168,10 @@ how to put in brackets and quotes and things like that.
 - delete: `ds{char}`
 - change: `cs{target}{replacement}`
 
+<<<<<<< HEAD
+=======
 'ted'
+>>>>>>> main
 
 ### comment 
 - add comments: `[count]gcc`
