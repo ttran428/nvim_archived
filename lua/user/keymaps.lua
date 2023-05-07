@@ -103,3 +103,25 @@ vim.keymap.set("n", "ySS", "<Plug>YSsurround")
 vim.keymap.set("x", "gs", "<Plug>VSurround")
 vim.keymap.set("x", "gS", "<Plug>VgSurround")
 
+
+-- barbar 
+-- Move to previous/next
+keymap('n', '<leader>[', '<Cmd>BufferPrevious<CR>', opts)
+keymap('n', '<leader>]', '<Cmd>BufferNext<CR>', opts)
+-- Re-order to previous/next
+keymap('n', '<leader><', '<Cmd>BufferMovePrevious<CR>', opts)
+keymap('n', '<leader>>', '<Cmd>BufferMoveNext<CR>', opts)
+-- Pin/unpin buffer
+keymap('n', '<leader>P', '<Cmd>BufferPin<CR>', opts)
+-- Close buffer
+keymap('n', '<leader>q', '<Cmd>BufferClose<CR>', opts)
+-- Wipeout buffer
+--                 :BufferWipeout
+-- Close commands
+--                 :BufferCloseAllButCurrent
+--                 :BufferCloseAllButPinned
+--                 :BufferCloseAllButCurrentOrPinned
+--                 :BufferCloseBuffersLeft
+--                 :BufferCloseBuffersRight
+-- Magic buffer-picking mode
+keymap('n', '<leader>p', '<Cmd>BufferPick<CR>', opts)

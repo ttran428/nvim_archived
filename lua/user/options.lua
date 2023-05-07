@@ -53,3 +53,4 @@ vim.cmd "set whichwrap+=<,>,[,],h,l" -- wraps to the next line. might break plug
 vim.cmd [[set iskeyword+=-]]
 
 vim.cmd ":au FocusLost * :wa"
+

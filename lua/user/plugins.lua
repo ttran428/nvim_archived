@@ -57,15 +57,7 @@ return packer.startup(function(use)
   -- Colorschemes
   use 'folke/tokyonight.nvim'
   use 'tanvirtin/monokai.nvim'
-  use {
-    "catppuccin/nvim",
-    as = "catppuccin",
-    config = function()
-        require("catppuccin").setup {
-            flavour = "latte" -- mocha, macchiato, frappe, latte
-        }
-        vim.api.nvim_command "colorscheme catppuccin"
-    end
+  use {"catppuccin/nvim", as = "catppuccin",
 	}
 
 	-- cmp plugins
@@ -120,11 +112,12 @@ return packer.startup(function(use)
       }
   })
 
-  use 'lewis6991/impatient.nvim'
-    
+
   use 'numToStr/Comment.nvim'
 
   use 'kylechui/nvim-surround'
+
+  use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

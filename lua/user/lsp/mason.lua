@@ -4,6 +4,7 @@ local servers = {
 	"pyright",
 	"jsonls",
     "terraformls",
+    "rust_analyzer"
 }
 
 local settings = {
