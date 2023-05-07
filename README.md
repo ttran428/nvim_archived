@@ -25,7 +25,6 @@ Foundation for Speed https://www.youtube.com/watch?v=gSHf_b6AWKc
 - center your view (cursor in middle): `zz`
 - search forward: `/` 
 - search backwards: `?`
-  dafd
 
 - beginning of first character in line: `_` or `^`
 - beginning of line: `0`
@@ -169,6 +168,10 @@ how to put in brackets and quotes and things like that.
 - delete: `ds{char}`
 - change: `cs{target}{replacement}`
 
+<<<<<<< HEAD
+=======
+'ted'
+>>>>>>> main
 
 ### comment 
 - add comments: `[count]gcc`
